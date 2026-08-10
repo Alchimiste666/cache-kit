@@ -1,0 +1,43 @@
+{
+  "name": "@alchemist-software/cache-kit-core",
+  "version": "1.0.0",
+  "description": "Core caching library with eviction strategies, stores, and observability",
+  "keywords": [
+    "cache",
+    "lru",
+    "fifo",
+    "ttl",
+    "eviction",
+    "memory",
+    "redis",
+    "valkey"
+  ],
+  "homepage": "https://github.com/alchimiste666/cache-kit#readme",
+  "bugs": "https://github.com/alchimiste666/cache-kit/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alchimiste666/cache-kit.git",
+    "directory": "packages/core"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "jest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

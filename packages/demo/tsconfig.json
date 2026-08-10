@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": false,
+    "composite": false,
+    "noEmit": true,
+    "paths": {
+      "@alchemist/cache-kit": ["../core/src/index.ts"],
+      "@alchemist/cache-kit-redis": ["../redis/src/index.ts"],
+      "@alchemist/cache-kit-valkey": ["../valkey/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

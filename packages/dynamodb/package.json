@@ -1,0 +1,38 @@
+{
+  "name": "@alchemist-software/cache-kit-dynamodb",
+  "version": "1.0.0",
+  "description": "DynamoDB cache store for @alchemist-software/cache-kit-core with optional DAX support",
+  "homepage": "https://github.com/alchimiste666/cache-kit#readme",
+  "bugs": "https://github.com/alchimiste666/cache-kit/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alchimiste666/cache-kit.git",
+    "directory": "packages/dynamodb"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "test": "jest --passWithNoTests"
+  },
+  "peerDependencies": {
+    "@alchemist-software/cache-kit-core": "^1.0.0",
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/lib-dynamodb": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

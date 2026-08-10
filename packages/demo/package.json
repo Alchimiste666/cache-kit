@@ -1,0 +1,17 @@
+{
+  "name": "@alchemist-software/cache-kit-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo showcasing @alchemist-software/cache-kit usage",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/demo.ts"
+  },
+  "dependencies": {
+    "@alchemist-software/cache-kit-core": "*",
+    "@alchemist-software/cache-kit-dynamodb": "*",
+    "@alchemist-software/cache-kit-redis": "*",
+    "@alchemist-software/cache-kit-telemetry": "*",
+    "@alchemist-software/cache-kit-valkey": "*"
+  }
+}
